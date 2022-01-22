@@ -13,11 +13,15 @@ if(isset($_POST['login'])){
    $data=$result->fetch_assoc();
    $user_email=$data['email'];
    $user_password=$data['password'];
+   $user_id=$data['customer_id'];
     
   //  echo "your email id is $user_email and password is $user_password";
 
   //start session
-  
+  session_start();
+  $_SESSION['email']=$user_email;
+  $_SESSION['id']=$user_id;
+  header("location:user_home.php");
 
  }
 
