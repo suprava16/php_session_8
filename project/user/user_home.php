@@ -8,7 +8,7 @@ if(isset($_SESSION['email'])){
 
 ?>
 
-<a href="">Profile</a>
+<a href="profile.php">Profile</a>
 <a href="logout.php">Logout</a>
 <?php
 }

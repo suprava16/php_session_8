@@ -27,6 +27,6 @@
   <!-- <h1>Your Profile</h1>
   <span>Name:</span>
   <span><?php echo $name;?></span> -->
-
+<a href="update.php">update</a>
 </body>
 </html>
